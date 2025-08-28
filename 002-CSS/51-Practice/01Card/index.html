@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Card</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            background-color: #1a1a1a;
+            height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .card {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            flex-direction: column;
+            height: 60%;
+            width: 25%;
+            border: 2px solid #fff;
+            box-shadow: 10px 10px red;
+            flex-wrap: wrap;
+        }
+
+        .image {
+            height: 50%;
+            width: 100%;
+        }
+
+        .img1 {
+            height: 100%;
+            width: 100%;
+        }
+
+        .title {
+            background-color: #008000;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+            margin-top: 2%;
+            padding: 4% 20%;
+        }
+
+        h2 {
+            color: #ff0000;
+        }
+
+        .buttn {
+            margin-top: 2%;
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+            background-color: blue;
+            padding: 4% 20%;
+            gap: 20%;
+        }
+
+        .button {
+            background-color: #ff0000;
+            color: #cadf10;
+            font-size: larger;
+            font-weight: bold;
+            padding: 5%;
+        }
+
+    </style>
+</head>
+<body>
+    <div class="card">
+        <div class="image">
+            <img src="https://images.pexels.com/photos/45982/pexels-photo-45982.jpeg" alt="...Loading" class="img1"/>
+        </div>
+        <div class="title">
+            <h2>Winter Clothes</h2>
+            <h3>Coming Soon...</h3>
+        </div>
+        <div class="buttn">
+            <button class="button">Buy Now</button>
+            <button class="button">Go to Cart</button>
+        </div>
+    </div>
+</body>
+</html>
