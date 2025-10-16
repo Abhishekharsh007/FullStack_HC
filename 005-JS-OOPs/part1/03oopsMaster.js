@@ -125,3 +125,47 @@ let penguin = new Penguin();
 console.log(bird.fly());
 console.log(penguin.fly());
 
+
+// static method
+
+class Calculator { 
+    static add(a, b) {
+        return a + b;
+    }
+}
+
+// ❌ let miniCalc = new Calculator();
+// ❌ console.log(miniCalc.add(2, 3));
+
+console.log(Calculator.add(2, 3));
+
+
+// getters and setters
+
+class Employee {
+    #salary;
+
+    constructor(name, salary) {
+        if (salary < 0) {
+            throw new Error("Salary cannot be negative");
+        }
+        this.name = name;
+        this.#salary = salary;
+    }
+
+    get salary() {
+        return `You are not allowed to see salary`;
+    }
+
+    set salary(value) {
+        if (value < 0) {
+            console.error("Invalid salary");
+        }
+        else {
+            this._salary = value;
+        }
+    }
+}
+
+let emp = new Employee("Alice", 50000);
+console.log(emp._salary);
